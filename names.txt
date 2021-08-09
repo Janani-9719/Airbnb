@@ -1,0 +1,8 @@
+https://www.airbnb.com/s/Colombo/homes?place_id=ChIJA3B6D9FT4joRjYPTMk0uCzI&refinement_paths%5B%5D=%2Fhomes&search_type=section_navigation
+https://www.airbnb.com/s/Kandy/homes?place_id=ChIJ06yYZCZm4zoRNTzgoRg4GkE&refinement_paths%5B%5D=%2Fhomes&search_type=section_navigation
+https://www.airbnb.com/s/Hikkaduwa/homes?place_id=ChIJbSLnyvt34ToRCFPRqlDrPjc&refinement_paths%5B%5D=%2Fhomes&search_type=section_navigation
+https://www.airbnb.com/s/Negombo/homes?place_id=ChIJO_eya5zu4joRPm8YCOkmFqU&refinement_paths%5B%5D=%2Fhomes&search_type=section_navigation
+https://www.airbnb.com/s/Galle/homes?place_id=ChIJ4_wyabtz4ToRA0zG-QO5NUo&refinement_paths%5B%5D=%2Fhomes&search_type=section_navigation
+https://www.airbnb.com/s/Unawatuna/homes?place_id=ChIJbZK_YvFy4ToRbER3g15MRMA&refinement_paths%5B%5D=%2Fhomes&search_type=section_navigation
+https://www.airbnb.com/s/Mirissa/homes?place_id=ChIJWdx3Mc4_4ToRkJzcNoun2KI&refinement_paths%5B%5D=%2Fhomes&search_type=section_navigation
+https://www.airbnb.com/s/Dambulla/homes?place_id=ChIJT8ytyPSv_DoRFGlTscU8rmc&refinement_paths%5B%5D=%2Fhomes&search_type=section_navigation
