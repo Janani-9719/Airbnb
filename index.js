@@ -70,7 +70,6 @@ async function hotelPage() {
     }
   }
   await browser.close()
-  // await fs.writeFile('nameHotels.txt', hotelLinks.join('\r\n'))
   await console.log(hotelLinks)
   return hotelLinks
 }
@@ -100,7 +99,33 @@ async function dataPage() {
         (x) => x.textContent
       )
     })
-await page.waitForSelector(' button._1qf7wt4w', {
+
+    //await console.log(titles[0])
+    //await title.push(titles[0])
+    try {
+      await page.waitForSelector('span._1ne5r4rt', {
+        waitUntil: 'load',
+        timeout: 50000,
+      })
+    } catch (err) {
+      //console.log(err)
+    }
+
+    const ratings = await page.evaluate(() => {
+      try {
+        return Array.from(document.querySelectorAll('span._1ne5r4rt')).map(
+          (x) => x.textContent
+        )
+      } catch (err) {
+        // console.log(err)
+        return 0
+      }
+    })
+
+    // await console.log(ratings[0])
+    //await rating.push(ratings[0])
+
+    await page.waitForSelector(' button._1qf7wt4w', {
       waitUntil: 'load',
       timeout: 0,
     })
@@ -110,21 +135,32 @@ await page.waitForSelector(' button._1qf7wt4w', {
         (x) => x.textContent
       )
     })
-      const dataObj = {
-      title: titles[0],
-      rating: 5, //ratings[0],
-      Reviews: noOfRatings[0],
+    // await console.log(noOfRatings[0])
+    //await noOfRating.push(noOfRatings[0])
+    var rev = 0
+    //const rev = parseInt(noOfRatings[0], 10)
+    if (/\d/.test(noOfRatings[0])) {
+      let resu = noOfRatings[0].match(/\d+/g)
+      // console.log(resu[0])
+      rev = parseInt(resu[0], 10)
     }
 
+    const dataObj = {
+      title: titles[0],
+      rating: ratings[0],
+      Reviews: rev,
+    }
+    // await data.push(dataObj)
+    // await console.log(dataObj)
     const air = new AirBnb(dataObj)
     air.save()
     console.log(dataObj)
-    //await data.push(dataObj)
-    // await console.log(dataObj)
   }
 
   await browser.close()
   //await console.log(data)
+
+  return data
 }
 dataPage()
 
